@@ -2,7 +2,7 @@ streamlit
 pandas
 numpy
 lightgbm
-opencv-python
+opencv-python-headless
 matplotlib
 scikit-learn
 scikit-image
