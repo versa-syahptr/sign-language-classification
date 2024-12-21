@@ -1,0 +1,9 @@
+streamlit
+pandas
+numpy
+lightgbm
+opencv-python
+matplotlib
+scikit-learn
+scikit-image
+streamlit-cropper
