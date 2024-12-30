@@ -10,8 +10,6 @@ import joblib
 import string
 
 classes = list(string.ascii_uppercase)
-classes.remove('J')
-classes.remove('Z')
 
 @st.cache_resource
 def load_models():
@@ -54,5 +52,6 @@ with st.sidebar:
                 prediction = model_prediction(small_cropped_img, lgbm_model, use_clahe)
             else:
                 prediction = model_prediction(small_cropped_img, svm_model, use_clahe)
-            st.write(f"**Prediction:** {classes[prediction[0]]}")
+            st.write(f"**Predicted Class Index:** `{prediction[0]}`")
+            st.write(f"**Predicted Character:** {classes[prediction[0]]}")
 
